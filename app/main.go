@@ -50,7 +50,7 @@ func versionHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func rootHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "ECS Fargate Blue-Green Demo | version=%s commit=%s\n", version, commitSHA)
+    fmt.Fprintf(w, "ECS Fargate Blue-Green Demo | version=%s commit=%s\n", version, commitSHA)
 }
 
 func main() {
