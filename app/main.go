@@ -62,6 +62,7 @@ func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/health", healthHandler)
 	mux.HandleFunc("/version", versionHandler)
+	mux.HandleFunc("/test", versionHandler)
 	mux.HandleFunc("/", rootHandler)
 
 	log.Printf("Starting server on :%s  version=%s  commit=%s  built=%s\n",
